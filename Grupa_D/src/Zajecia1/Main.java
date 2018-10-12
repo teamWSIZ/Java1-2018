@@ -1,14 +1,18 @@
+package Zajecia1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("sdfsdfsdf");
         //zmienna napis
-        String napis1 = "to jest jakiœ napis";
+        String napis1 = "to jest jakiï¿½ napis";
         System.out.println(napis1);
+
+        String haslo1 = "0123";
 
         //kolejna zmienna z napisem
         String napis2 = " Kolejny napis";
@@ -36,9 +40,9 @@ wielolinijkowy
         }
 
         //warunek logiczny if ( jest warunek)
-        //! - negacja czyli odwrócenie warunku
-        //&& - AND - obie strony musz¹ byæ prawdziwe
-        //|| - OR - jeden z warunków musi byæ prawdziwy
+        //! - negacja czyli odwrï¿½cenie warunku
+        //&& - AND - obie strony muszï¿½ byï¿½ prawdziwe
+        //|| - OR - jeden z warunkï¿½w musi byï¿½ prawdziwy
 
         if (!(2 == 2) && napis2.equals(" Kolejny napis")) {
             System.out.println("tak to jest prawda");
@@ -51,13 +55,9 @@ wielolinijkowy
 
         //Stworzenie strumienia do wczytania tekstu z konsoli
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            // odbieranie wpisanego tekstu
-            String napis3 = br.readLine();
-            System.out.println(napis1 + " " + napis2 + " " + napis3);
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // odbieranie wpisanego tekstu
+        String napis3 = br.readLine();
+        System.out.println(napis1 + " " + napis2 + " " + napis3);
+
     }
 }
