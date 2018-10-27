@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("sdfsdfsdf");
         //zmienna napis
-        String napis1 = "to jest jaki� napis";
+        String napis1 = "mail@o2.pl";
         System.out.println(napis1);
 
         String haslo1 = "0123";
@@ -22,6 +22,12 @@ public class Main {
 
         int liczba0;
         int liczba1 = 10, liczba2 = 20;
+        byte libcza2;
+        short libcza3;
+        long  liczba4;
+
+        float liczbaZprzecinkiem = 14.3f;
+        double liczbaZprzecinkiem2 = 123.23123;
 
         System.out.println(liczba1 + liczba2);
         System.out.println("byle co " + napis1 + " " + (liczba1 + liczba2));
@@ -33,7 +39,7 @@ wielolinijkowy
         boolean czyWieksze = 10 >= 7;
         //boolean czylibczyrowne = 10 == 110;
 
-        if (czyWieksze) {
+        if (napis1.equals("kowalski@o2.pl")) {
             System.out.println("Jest wieksze");
         } else {
             System.out.printf("Jest mniejsze");
