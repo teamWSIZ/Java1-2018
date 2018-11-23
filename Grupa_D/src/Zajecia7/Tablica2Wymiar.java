@@ -7,5 +7,10 @@ public class Tablica2Wymiar {
                 {7, 8, 9}};
 
         System.out.println(tab3[2][1]); // 8
+        for (int i = 0; i < tab3.length; i++) {
+            for (int j = 0; j < tab3[i].length; j++) {
+                System.out.println(tab3[i][j]);
+            }
+        }
     }
 }
