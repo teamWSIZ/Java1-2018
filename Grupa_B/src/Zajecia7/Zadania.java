@@ -65,29 +65,27 @@ public class Zadania {
 
         System.out.println("\n+++++++++++++++++");
         //Ad.6
-        int[] unikat = {1, 2, 3, 4, 6, 1, 5, 3, 5, 2};
-        int[] powt = {1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000};
+        int[] unikat = {1, 2, 3, 4, 5, 3, 5, 4, 2, 6, 7};
+        int[] powt = {1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000};
 
-        int un = 1;
         for (int i = 0; i < unikat.length; i++) {
             for (int j = 0; j < unikat.length; j++) {
                 if (i == j) continue;
-                if (unikat[i] == unikat[j]){
-                    powt[i]=unikat[j];
+                if (unikat[i] == unikat[j]) {
+                    powt[i] = unikat[j];
                 }
             }
         }
 
-        for (int i = 0; i < powt.length; i++) {
-            System.out.println(powt[i]);
-        }
+//        for (int i = 0; i < powt.length; i++) {
+//            System.out.println(powt[i]);
+//        }
         System.out.println("================");
         for (int i = 0; i < unikat.length; i++) {
-            if (unikat[i]!= powt[i] && powt[i]!=1000){
-                System.out.println(powt[i]);
+            if (unikat[i] != powt[i]) {
+                System.out.println(unikat[i]);
                 //break;
             }
         }
-        System.out.println(un);
     }
 }
