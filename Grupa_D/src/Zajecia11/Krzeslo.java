@@ -11,5 +11,4 @@ public class Krzeslo {
         System.out.println("Material:" + rodzajMaterialu);
 
     }
-
 }

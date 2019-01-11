@@ -5,6 +5,7 @@ public class Klasy {
 
     public static void main1(String[] args) {
         Krzeslo obiektKrzeslo = new Krzeslo();
+        System.out.println(obiektKrzeslo);
         System.out.println(obiektKrzeslo.rodzajMaterialu);
         System.out.println(obiektKrzeslo.iloscNog);
         obiektKrzeslo.InfomacjaOKrzesle();
