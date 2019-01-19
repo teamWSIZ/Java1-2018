@@ -33,10 +33,19 @@ public class Prostokat {
     }
 
     public void setA(int a) {
-      if (a > 10 & a < 20){
-          this.a = a;
-      }else {
-          System.out.println("Zły przedział!!!");
-      }
+        if (a > 10 & a < 20) {
+            this.a = a;
+        } else {
+            System.out.println("Zły przedział!!!");
+        }
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public Prostokat Kopia() {
+        Prostokat pp = new Prostokat(this.a, this.b);
+        return pp;
     }
 }
