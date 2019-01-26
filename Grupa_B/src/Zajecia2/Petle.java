@@ -1,6 +1,7 @@
 package Zajecia2;
 
 public class Petle {
+
     public static void main(String[] args) {
 
         int ii = 0;
