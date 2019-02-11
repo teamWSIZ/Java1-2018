@@ -1,6 +1,6 @@
 package Zajecia12;
 
-public class User implements Cloneable {
+public class User implements Cloneable, Comparable {
     private String name;
     private String surname;
     private byte year;
@@ -58,5 +58,14 @@ public class User implements Cloneable {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        User u = (User) o; // Rzutujemy przysłany obiekt na klase użytkownik
+        if (u.name.charAt(0) < this.name.charAt(0)) { // sprawdzamy czy 1 literka imienia jest mniejsza od literki imienia w tej klasie
+            return -1;//jeżeli tak to zwracamy -1 co oznacza że jest mniejsza
+        } else
+            return 1;//innym wypadku jest wieksza
     }
 }

@@ -10,8 +10,8 @@ public class DataUsers {
         userList = new ArrayList();
 
         userList.add(new User("Jan", "Kowalski", (byte) 40, "123456"));
-        userList.add(new User("Janusz", "Kowalski", (byte) 50, "654321"));
-        userList.add(new User("Irena", "Kowalski", (byte) 30, "qwerty"));
+        userList.add(new User("Aanusz", "Kowalski", (byte) 50, "654321"));
+        userList.add(new User("Drena", "Kowalski", (byte) 30, "qwerty"));
     }
 
     public void AddUser(User user) {
@@ -39,5 +39,9 @@ public class DataUsers {
         }
 
         return null;
+    }
+
+    public List<User> getUserList() {
+        return userList;
     }
 }
